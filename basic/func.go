@@ -8,6 +8,10 @@ func main() {
 
 	fmt.Println(add(2,3))
 
+	func() {
+		fmt.Println("Anonymous function called")
+	}()
+
 	greet := func(){
 		fmt.Println("Anonymous function called")
 	}
