@@ -4,18 +4,15 @@ import (
 	"fmt"
 )
 
-func main() {
-	var a int = 10
-	var ptr *int
-	ptr = &a
-	fmt.Println("Value of a:", a)
-	fmt.Println("Address of ptr:", *ptr)
-	modifyValue(ptr)
-	fmt.Println("After modification, value pointed by ptr:", *ptr)
-	fmt.Println("Value of a after modification:", a)
-
+type Person struct {
+    Name string
+    Age  int
 }
 
-func modifyValue(input *int) {
-	*input++
+func main() {
+    data := map[string]interface{}{
+		"name": "Jane",
+		"age":  25,
+	}
+    fmt.Println("Welcome to", data["name"], "who is", data["age"], "years old!")
 }
