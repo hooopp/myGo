@@ -17,8 +17,10 @@ func main() {
 	var anything interface{}
 	anything = "This can be anything"
 	fmt.Println("Anything:", anything)
+	fmt.Println("Anything type:", fmt.Sprintf("%T", anything))
 	anything = 123
 	fmt.Println("Anything:", anything)
+	fmt.Println("Anything type:", fmt.Sprintf("%T", anything))
 }
 
 func myPrinter(i ...interface{}) {
