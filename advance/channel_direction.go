@@ -14,7 +14,7 @@ func producer(ch chan<- int){
 	go func(){
 		for i := range 5 {
 			ch <- i
-		}
+		}  
 		close(ch)
 	}()
 }
